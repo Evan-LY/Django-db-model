@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="{% url "index" "test" %}">你好，张三</a>
+    <br>
+    <from action="{% url "form"  %}" method="post">
+        <label for="name">name</label>
+        <input type="text" name="name" id="name">
+        <br/>
+        <label for="male">male</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="female">female</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <br/>
+        <label for="age">age</label>
+        <input type="text" name="age" id="age">
+        <br/>
+        <input type="submit" value="submit">
+    </from>
+</body>
+</html>
